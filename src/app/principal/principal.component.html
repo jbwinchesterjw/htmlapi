@@ -1,0 +1,31 @@
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/listarPeople">Lista de Personagem</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/listarPlanets">Lista de Planetas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/listarNaves">Lista de Naves</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/listarVehicles">Lista de Veiculos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/listarFilms">Lista de Filmes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/listarSpecies">Lista de Especie</a>
+    </li>
+  </ul>
+
+<app-people *ngIf="!formulario1"></app-people>
+<!--app-vehicles *ngIf="!formulario2"></app-vehicles-->
+<app-species *ngIf="!formulario3"></app-species>
+<app-naves *ngIf="!formulario4"></app-naves>
+<app-films *ngIf="!formulario5"></app-films>
+<app-planets *ngIf="!formulario6"></app-planets>
+<router-outlet></router-outlet>
+
+
+

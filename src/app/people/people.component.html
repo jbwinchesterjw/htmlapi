@@ -1,0 +1,15 @@
+<!--form [formGroup]="formularioBuscar">
+    <input type="text"placeholder="NOME" formControlName="nome" class="form-control">
+    <button class="btn btn-primary"(click)="">Buscar Por Nome</button>
+</form-->
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>NOMES DAS PESSOAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of people; let i = index">
+            <td>{{p.name}}</td>
+    </tbody>
+</table>

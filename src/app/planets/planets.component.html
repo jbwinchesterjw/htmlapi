@@ -1,0 +1,11 @@
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th>NOMES DOS PLANETAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of planets; let i = index">
+            <td>{{p.name}}</td>
+    </tbody>
+</table>
